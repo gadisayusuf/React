@@ -12,11 +12,11 @@ function App() {
     });
   }
   function deleteNote(id) {
-    console.log(id)
-    setNotes((prevNotes)=>{
-        return prevNotes.filter((noteItem,index)=>{
-            return index !== id;
-        })
+    console.log(id);
+    setNotes((prevNotes) => {
+      return prevNotes.filter((noteItem, index) => {
+        return index !== id;
+      });
     });
   }
   return (

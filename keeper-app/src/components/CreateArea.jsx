@@ -15,9 +15,7 @@ function CreateArea(props) {
     event.preventDefault();
     props.onAdd(note);
     setNote({ title: "", content: "" });
-
   }
-  
 
   return (
     <div>
@@ -35,11 +33,7 @@ function CreateArea(props) {
           rows="3"
           value={note.content}
         />
-        <button
-          onClick={submitNote}
-        >
-          Add
-        </button>
+        <button onClick={submitNote}>Add</button>
       </form>
     </div>
   );
